@@ -1,0 +1,37 @@
+<!DOCTYPE html><html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crucigrama: Habitabilidad del Trabajador</title>
+    <script src="https://unpkg.com/crossword-js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #crossword {
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Crucigrama sobre Habitabilidad del Trabajador</h1>
+    <p>Responde correctamente con base en los artículos 136-153 de la Ley Federal del Trabajo.</p>
+    <div id="crossword"></div><script>
+    const crosswordData = {
+        words: [
+            { word: "higiene", clue: "Condiciones sanitarias adecuadas en el lugar de trabajo." },
+            { word: "ventilacion", clue: "Sistema que permite la circulación del aire en los espacios laborales." },
+            { word: "seguridad", clue: "Medidas para evitar accidentes laborales." },
+            { word: "iluminacion", clue: "Elemento esencial en el área de trabajo para evitar fatiga visual." },
+            { word: "descanso", clue: "Tiempo que el trabajador tiene para recuperar energías." }
+        ]
+    };
+    
+    const crossword = new CrosswordJS(crosswordData);
+    crossword.render(document.getElementById('crossword'));
+</script>
+
+</body>
+</html>
